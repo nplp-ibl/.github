@@ -12,7 +12,6 @@ body:
         Np. Po kliknięciu w przycisk "Zapisz" nic się nie dzieje.
 
         Jeżeli tylko się da dodaj zrzuty ekranu wyjaśniające problem.
-      render: markdown
     validations:
       required: true
 
