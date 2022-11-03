@@ -1,0 +1,74 @@
+name: Zgłaszanie błędu
+description: Stwórz raport o błędzie i pomóż nam go usunąć.
+title: "[Błąd]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Opis błędu
+      description: Krótki i zwięzły opis błędu
+      placeholder: |
+        Np. Po kliknięciu w przycisk "Zapisz" nic się nie dzieje.
+
+        Jeżeli tylko się da dodaj zrzuty ekranu wyjaśniające problem.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Jak powtórzyć
+      description: Kroki które należy podjąć żeby wystąpił błąd.
+      placeholder: |
+        1. Idź do '...'
+        2. Kliknij w '...'
+        3. Przewiń do '...'
+        4. Zobacz błąd
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Oczekiwane zachowanie
+      description: Krótki i zwięzły opis tego co powinno się wydarzyć.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: System operacyjny
+      description: Na jakim systemie operacyjnym występuje błąd?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - iOS
+        - Android
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: W jakich przeglądarkach występuje błąd?
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - IE/Edge
+        - Opera
+        - Arc
+        - Brave
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Dodatkowe informacje
+      description: Dodatkowe informacje, które mogą być przydatne do rozwiązania problemu.
+    validations:
+      required: false

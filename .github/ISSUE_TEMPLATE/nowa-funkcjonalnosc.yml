@@ -1,4 +1,4 @@
-name: Nowa funkcjonalność 2
+name: Nowa funkcjonalność
 description: Zgłoś pomysł
 title: "[Nowa funkcjonalność]: "
 labels: ["feature"]
@@ -11,6 +11,14 @@ body:
       placeholder: Krótki i zwięzły opis problemu. Np. Żeby zrobić nowy obiekt musze kliknąć 12 razy [...]
     validations:
       required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Rozwiązanie
+      description: Opisz proponowane rozwiązanie
+      placeholder: Krótki i zwięzły opis tego co chciał(a)byś żeby się wydarzyło.
+    validations:
+      required: false
   - type: textarea
     id: alternatives
     attributes:
